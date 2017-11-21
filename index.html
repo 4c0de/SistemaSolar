@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sistema Solar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!--LINK CSS-->
+        <link rel="stylesheet" type="text/css" href="css\estilo.css">
+    </head>
+    <body onload="flotante(2)">
+    	<audio autoplay loop>
+		  <source src="music/musica.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+    	<div id="contenedor">
+    	        <div id="info">
+    	        	<h1>SOL</h1>
+    	        		<p><img class="ventanaInfo" src="img/sol.png">El Sol ​ es una estrella de tipo-G de la secuencia principal y clase de luminosidad V que se encuentra en el centro del sistema solar y constituye la mayor fuente de radiación electromagnética de este sistema planetario<br><br><br><br>
+    	        		<b>Distancia a la Tierra</b>: 149,6 millones de km.<br>
+    	        	   <b>Masa relativa a la de la Tierra:</b> 332 946X.<br>
+    	        	   <b>Distancia media desde la Tierra:</b> 149 597 870 700 m (~ 1,5 × 1011 m).<br>
+    	        	   <b>Temperatura efectiva de la superficie:</b> 5778 K (5505 C)<br>
+    	        	   <b>Densidad relativa a la de la Tierra:</b> 0,26x<br>
+    	        	   <b>Temperatura del núcleo: ~ 1,36 × 106 K</b><br>	
+    	        	</p>
+    	        </div> 	
+    	        <div id="infoJupiter">
+    	        	<h1>Jupiter</h1>
+    	        	<p><img class="ventanaInfo" src="img/jupiter.png">Júpiter es el quinto planeta del sistema solar. Forma parte de los denominados planetas exteriores o gaseosos. Recibe su nombre del dios romano Júpiter. Se trata del planeta que ofrece un mayor brillo a lo largo del año dependiendo de su fase.<br><br><br>
+    	        		<b>Distancia desde el Sol:</b>778,5 millones km.<br>
+    	        	   <b>Radio:</b>9.911 km.<br>
+    	        	   <b>Duración del día:</b>0d 9h 56m.<br>
+    	        	   <b>Gravedad:</b>24,79 m/s²<br>
+    	        	   <b>Masa:</b>1,898 × 10^27 kg (317,8 M⊕)<br>
+    	        	   <b>Satélites:</b>:Europa, Ganimedes, Ío, Calisto, S/2003 J 2, Adrastea, Calé,...<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoMercurio">
+    	        	<h1>Mercurio</h1>
+    	        	
+    	        	<p><img class="ventanaInfo" src="img/mercurio.png">Mercurio es el planeta del sistema solar más próximo al Sol y el más pequeño. Forma parte de los denominados planetas interiores o terrestres y carece de satélites naturales al igual que Venus.<br><br><br>
+    	        		<b>Distancia desde el Sol:</b> 57,91 millones km.<br>
+    	        	   <b>Radio:</b> 2.440 km.<br>
+    	        	   <b>Duración del día:</b> 58d 15h 30m².<br>
+    	        	   <b>Gravedad:</b> 3,7 m/s².<br>
+    	        	   <b>Masa:</b>3,285 × 10^23 kg (0,055 M⊕).<br>
+    	        	   <b>Satélites:</b>Ninguno<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoVenus">
+    	        	<h1>Venus</h1>
+    	        	
+    	        	<p><img class="ventanaInfo" src="img/venus.png">Venus es el segundo planeta del sistema solar en orden de distancia desde el Sol, el sexto en cuanto a tamaño, ordenados de mayor a menor. Al igual que Mercurio, carece de satélites naturales.<br><br><br><br>
+    	        		<b>Distancia desde el Sol:</b> 108,2 millones km.<br>
+    	        	   <b>Radio:</b> 6.052 km.<br>
+    	        	   <b>Duración del día:</b> 116d 18h 0m.<br>
+    	        	   <b>Gravedad:</b> 8,87 m/s².<br>
+    	        	   <b>Superficie:</b> 460,2 millones km².<br>
+    	        	   <b>Satélites:</b>Ninguno<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoMarte">
+    	        	<h1>Marte</h1>
+    	        	<p><img class="ventanaInfo" src="img/marte.png">Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar, después de Mercurio.<br><br><br><br><br>
+    	        	   <b>Distancia desde el Sol:</b> 227,9 millones km.<br>
+    	        	   <b>Radio:</b> 3.390 km.<br>
+    	        	   <b>Periodo de rotación:</b> 24,6229 horas.<br>
+    	        	   <b>Gravedad:</b> 3,711 m/s².<br>
+    	        	   <b>Masa:</b> 6,39 × 10^23 kg (0,107 M⊕).<br>
+    	        	   <b>Satélites:</b> Fobos, Deimos.<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoTierra">
+    	        	<h1>Tierra</h1>
+    	        	
+    	        	<p><img class="ventanaInfo" src="img/tierra.png">La Tierra es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna. Es el más denso y el quinto mayor de los ocho planetas del sistema solar. También es el mayor de los cuatro terrestres o rocosos.<br><br><br>
+    	        		<b>Distancia desde el Sol:</b>149,6 millones km.<br>
+    	        	   <b>Radio:</b>6.371 km.<br>
+    	        	   <b>Superficie:</b> 510,1 millones km²<br>
+    	        	   <b>Gravedad:</b> 9,80665 m/s².<br>
+    	        	   <b>Masa:</b>5,972 × 10^24 kg.<br>
+    	        	   <b>Satélites:</b>Luna<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoSaturno">
+    	        	<h1>Saturno</h1>
+    	        	<p><img class="ventanaInfo" src="img/saturno.png">Saturno es el sexto planeta del sistema solar, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde nuestro planeta. Su nombre proviene del dios romano Saturno.<br><br><br><br>
+    	        		<b>Distancia desde el Sol:</b>1,429 miles de millones km.<br>
+    	        	   <b>Radio:</b>58.232 km.<br>
+    	        	   <b>Duración del día:</b>0d 10h 42m.<br>
+    	        	   <b>Gravedad:</b> 10,44 m/s².<br>
+    	        	   <b>Masa:</b> 5,683 × 10^26 kg (95,16 M⊕)<br>
+    	        	   <b>Satélites:</b>Titán, Encélado, Mimas, Jápeto, Dione, Rea, Tetis, Tarqeq, ...<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoUrano">
+    	        	<h1>Urano</h1>
+    	        	<p><img class="ventanaInfo" src="img/urano.png">Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano, el padre de Crono y el abuelo de Zeus.<br><br><br><br>
+    	        		<b>Distancia desde el Sol:</b>2,871 miles de millones km.<br>
+    	        	   <b>Radio:</b>25.362 km.<br>
+    	        	   <b>Duración del día:</b>0d 17h 14m.<br>
+    	        	   <b>Gravedad:</b> 8,69 m/s².<br>
+    	        	   <b>Satélites:</b> Titania, Miranda, Umbriel, Ariel, Oberón, Trínculo, Margarita, ...<br>	
+    	        	</p>
+    	        </div>
+    	        <div id="infoNeptuno">
+    	        	<h1>Neptuno</h1>
+    	        	<p><img class="ventanaInfo" src="img/neptune.png">Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores o gigantes gaseosos, y es el primero que fue descubierto gracias a predicciones matemáticas.<br><br><br><br>
+    	        		<b>Distancia desde el Sol:</b> 4,498 miles de millones km.<br>
+    	        	   <b>Radio:</b>24.622 km.<br>
+    	        	   <b>Duración del día:</b>0d 16h 6m.<br>
+    	        	   <b>Satélites:</b> Tritón, Laomedeia, S/2004 N 1, Proteo, Nereida, Halimede, Despina, Galatea, Sao, Náyade, Psámate, Talasa, Neso, Larisa<br>	
+    	        	</p>
+    	        </div>
+    		    <div id="sol"></div>
+    			<div id="traslacion">
+    				<div id="mercurio"></div>
+    			</div>
+    			<div id="traslacionVenus">
+    				<div id="venus"></div>
+    			</div>	
+    			<div id="traslacionTierra">
+    				<div id="tierra"></div>
+    			</div>
+    			<div id="traslacionMarte">
+    				<div id="marte"></div>
+    			</div>
+    			<div id="traslacionJupiter">
+    				<div id="jupiter"></div>
+    			</div>
+    			<div id="traslacionSaturno">
+    				<div id="saturno"></div>
+    			</div>
+    			<div id="traslacionUrano">
+    				<div id="Urano"></div>
+    			</div>	
+    			<div id="traslacionNeptuno">
+    				<div id="neptuno"></div>
+    			</div>
+    			<div id="halo"></div>
+        </div>
+        <div id="flotante">
+        	 <h1>Sistema Solar</h1>
+             <h3><a onClick="flotante(1)">ENTRAR</a></h3>
+             <button onClick="flotante(2)">VOLVER</button>
+        </div>
+    </body> 
+<script src="js/jquery.min.js"></script>
+<script src="js/javascript.js"></script>
+
+
+
+</html>
